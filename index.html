@@ -32,7 +32,7 @@
             <h2 class="title">IP Address Tracker</h2>
             <div class="ip_input_area">
                 <input type="text" name="ip_input" id="ip_input" placeholder="Seach for any IP address or domain">
-                <button class="go_button">
+                <button class="go_button" onclick="doSearch()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
                         <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
                     </svg>
@@ -45,30 +45,27 @@
             <ul class="info_banner_items">
                 <li>
                     <p class="info_banner_item_title">IP ADRRESS</p>
-                    <p class="info_banner_item_text" id="ip_final">192.168.0.0</p>
+                    <p class="info_banner_item_text" id="ip_final"></p>
                 </li>
                 <li>
                     <p class="info_banner_item_title">LOCATION</p>
-                    <p class="info_banner_item_text" id="location_final">Brooklyn, NY, 10001</p>
+                    <p class="info_banner_item_text" id="address_line_1"></p>
+                    <p class="info_banner_item_text" id="address_line_2"></p>
                 </li>
                 <li>
                     <p class="info_banner_item_title">TIMEZONE</p>
-                    <p class="info_banner_item_text">UTC -05:00</p>
+                    <p class="info_banner_item_text" id="timezone_final"></p>
                 </li>
                 <li>
-                    <p class="info_banner_item_title" onclick="maptest()">ISP</p>
-                    <p class="info_banner_item_text">SpaceX Starlink</p>
+                    <p class="info_banner_item_title">ISP</p>
+                    <p class="info_banner_item_text"  id="isp_final"></p>
                 </li>
             </ul>
         </section>
         <section class="map">
             <div id="map"></div>
-                <script>var map = L.map('map').setView([51.505, -0.09], 13);
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            maxZoom: 19,
-                            attribution: '© OpenStreetMap'
-                        }).addTo(map);
-                    </script>
+                <!-- <script src="/services/map-location.js">
+                </script> -->
         </section>
     </main>
 </body>

@@ -110,3 +110,7 @@
     max-height: 700px;
     
 }
+
+.coordinates {
+    display: none;
+}
