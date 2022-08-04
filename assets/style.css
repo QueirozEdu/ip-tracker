@@ -1,0 +1,61 @@
+:root {
+    font-family: 'Rubik', sans-serif;
+    --very-dark-grey: hsl(0, 0%, 17%);
+    --dark-grey: hsl(0, 0%, 59%);
+    font-size: 18px;
+}
+
+.header {
+    background-image: url("/assets/images/pattern-bg.png");
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.header_content {
+    line-height: 50px;
+    width: 550px;
+}
+.title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.ip_input_area {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 1px 1px 17px -5px #000000; 
+    box-shadow: 1px 1px 17px -5px #000000;
+
+}
+#ip_input {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.go_button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    border: none;
+
+    margin-left: -10px;
+    width: 60px;
+
+    background: black;
+    color: white;
+    font-weight: 700;
+}
+
+.go_button:hover {
+    background-color: #333333;
+}
