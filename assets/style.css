@@ -59,3 +59,32 @@
 .go_button:hover {
     background-color: #333333;
 }
+
+.info_banner {
+    width: 80%;
+    position: relative;
+    left: 10vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -60px;
+    -webkit-box-shadow: 1px 1px 17px -5px #000000; 
+    box-shadow: 1px 1px 17px -5px #000000;
+}
+
+.info_banner_items {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.info_banner_items li:not(:first-of-type) {
+    border-left: 1px solid rgba(0, 0, 0, 0.336);
+    padding: 20px;
+}
+
+.map {
+    background: grey;
+    height: 100vh;
+    margin-top: -60px;
+}
