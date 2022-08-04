@@ -4,7 +4,6 @@
     --dark-grey: hsl(0, 0%, 59%);
     font-size: 18px;
 }
-
 .header {
     background-image: url("/assets/images/pattern-bg.png");
     display: flex;
@@ -61,9 +60,10 @@
 }
 
 .info_banner {
-    width: 80%;
+    width: 77%;
     position: relative;
-    left: 10vw;
+    z-index: 10000;
+    left: 11.5vw;
     background-color: white;
     border-radius: 10px;
     margin-top: -60px;
@@ -76,15 +76,37 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
 }
 .info_banner_items li:not(:first-of-type) {
     border-left: 1px solid rgba(0, 0, 0, 0.336);
     padding: 20px;
 }
+.info_banner_item_title {
+    font-size: 0.6em;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    color: var(--dark-grey);
+}
+.info_banner_item_text {
+    font-size: 1.5em;
+    font-weight: 500;
+}
 
 .map {
     background: grey;
-    height: 100vh;
-    margin-top: -60px;
+    width: 100vw;
+    height: 72vh;
+    position:absolute; 
+    top: 13em;
+}
+
+#map { 
+    /* position: relative; */
+    /* top: -100px; */
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    
 }
