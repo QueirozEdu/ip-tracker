@@ -8,7 +8,7 @@ async function getIp() {
 
 async function handleUserIp() {
     const ip = await this.getIp();
-    console.log(ip)
+    // console.log(ip)
     document.getElementById("ip_final").innerText = ip;
 
    
